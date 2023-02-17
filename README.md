@@ -6,7 +6,7 @@ Welcome to SkillChain, an open-source project for a platform that aims to bridge
 
 SkillChain is a web-based platform where job seekers can create a profile and list their skills and experience. Employers can search for job seekers based on the required skills and experience. The platform offers a talent pool, which will help job seekers to highlight their skills and employers to identify the best candidates for the job. The talent pool will also enable employers to post job openings and receive applications from job seekers.
 
-The SkillChain project aims to create an open-source platform that is accessible to all job seekers and employers. The project is developed using modern web technologies, including HTML, CSS, and JavaScript. The platform will be designed to be user-friendly and intuitive, with a clean and professional interface.
+The SkillChain project aims to create an open-source platform that is accessible to all job seekers and employers. The project is developed using modern web technologies, including React. The platform will be designed to be user-friendly and intuitive, with a clean and professional interface.
 
 ## Getting Started
 
