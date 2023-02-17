@@ -1,7 +1,7 @@
 import { staticFeaturedJobs } from '../../../state/models/staticFeaturedJobs';
-import viewMoreIcon from './assets/icons/ViewMore.svg';
-import amazonLogo from './assets/logos/Amazon.png';
-import quantumLogo from './assets/logos/Quantum.png';
+import viewMoreIcon from './assets/icons/viewMore.svg';
+import amazonLogo from './assets/logos/amazon.png';
+import quantumLogo from './assets/logos/quantum.png';
 import './FeaturedJobs.scss';
 
 
