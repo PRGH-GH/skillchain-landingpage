@@ -8,21 +8,21 @@
 
     background-color: var(--color-white-lilac);
 
-    &__Heading {
+    &__heading {
         display: flex;
         justify-content: space-between;
     }
 
-    &__ViewMoreLink {
+    &__viewMoreLink {
         color: #7D7CAC;
         text-decoration: none;
 
-        &__Icon {
+        &__icon {
             vertical-align: baseline;
         }
     }
 
-    &__CardContainer {
+    &__cardContainer {
         display: flex;
         gap: 32px;
         justify-content: space-between;

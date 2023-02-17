@@ -13,16 +13,16 @@ function FeaturedJobs() {
 
     return (
         <section className="FeaturedJobs">
-            <div className="FeaturedJobs__Heading">
+            <div className="FeaturedJobs__heading">
                 <h2>Featured Jobs</h2>
-                <a className="FeaturedJobs__ViewMoreLink" href="#">
-                    <span className="FeaturedJobs__ViewMoreLink__Text">View More</span>
-                    <span className="FeaturedJobs__ViewMoreLink__Icon">
+                <a className="FeaturedJobs__viewMoreLink" href="#">
+                    <span className="FeaturedJobs__viewMoreLink__text">View More</span>
+                    <span className="FeaturedJobs__viewMoreLink__icon">
                         <img src={viewMoreIcon} alt="view more link icon" />
                     </span>
                 </a>
             </div>
-            <div className="FeaturedJobs__CardContainer">
+            <div className="FeaturedJobs__cardContainer">
                 {staticFeaturedJobs.map((job) => (
                     job.title
                 ))}
