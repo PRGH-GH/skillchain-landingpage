@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 .HeroSection {
 	padding-top: 5%;
 	max-width: 1260px;
@@ -7,16 +11,13 @@
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 5%;
 
-	&__main {
-		max-height: 45rem;
-	}
-
-	&__main,
+	&__info,
 	&__image {
-		flex-basis: calc(50% - 10px);
-		max-width: calc(50% - 10px);
+		flex-basis: 50%;
+		max-width: 50%;
 	}
 
 	&__title {
@@ -46,10 +47,10 @@
 		border: 2px solid #0066ff;
 		border-radius: 8px;
 	}
+}
 
-	&__image {
-		background: top right no-repeat url(img/hero-image.svg);
-		background-size: contain;
-		height: 100%;
+.HeroSection__image {
+	& img {
+		max-width: 100%;
 	}
 }
