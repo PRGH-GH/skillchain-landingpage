@@ -54,3 +54,9 @@
 		max-width: 100%;
 	}
 }
+
+@media only screen and (min-width: 1280px) {
+	.HeroSection__title {
+		font-size: 56px;
+	}
+}
