@@ -1,0 +1,57 @@
+$Blue_Ribbon: #0066FF;
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.CallToAction {
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    img {     
+        width: 50vw;
+        object-fit: cover;
+        margin: 5vw;
+        border-radius: 32px;
+    }
+
+    h2{
+        margin-bottom: 0;
+    }
+
+    .underLine{
+        width: 25px;
+        height: 10px;
+        border-radius: 32px;
+        background-color: $Blue_Ribbon;
+    }
+
+    .actionText {
+        width: 35vw;
+        margin: 2vw;     
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .CallToAction {
+        height: auto;
+        flex-direction: column;
+        margin: 5vw;  
+    
+        img {     
+            width: 100%;
+        }
+    
+        .actionText {
+            width: 100%;           
+        }
+    }
+  }
