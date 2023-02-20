@@ -3,11 +3,11 @@
 :root {
   font-size: 16px;
 
-  // Font Variables
+  // Font Variables:
   --inter: 'Inter', sans-serif;
   --philosopher: 'Philosopher', sans-serif;
 
-  // Color Variables
+  // Color Variables:
   --color-blue-ribbon: #0066FF;
   --color-selective-yellow: #FFBA00;
   --color-bunting: #151F4C;
@@ -40,6 +40,13 @@ h3 {
 
 h4 {
   font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--inter);
 }
 
 p {
