@@ -74,11 +74,9 @@
 
 @media only screen and (min-width: 1450px) {
   .HeroSection {
-    &__info {
-      &__info,
-      &__image {
-        flex-basis: auto;
-      }
+    &__info,
+    &__image {
+      flex-basis: auto;
     }
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroSection.scss";
-import HeroImage from "./assets/hero-image.svg";
+import HeroImage from "./assets/heroImage.svg";
 
 function HeroSection() {
   return (
