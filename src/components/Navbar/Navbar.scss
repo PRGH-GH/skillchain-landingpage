@@ -1,0 +1,36 @@
+.navbar {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 0px 16px;
+   gap: 10px;
+   position: absolute;
+   width: 100%;
+  
+    &__items {
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 17px;
+    color: #151F4C;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    }
+  
+    &__btn {
+     font-family: Inter;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 17px;
+     color: #0066FF;
+     flex: none;
+     order: 0;
+     flex-grow: 0;
+     border-width: 2px;
+     padding: 16px;
+    }
+  }
+  
