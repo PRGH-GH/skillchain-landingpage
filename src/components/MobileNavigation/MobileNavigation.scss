@@ -8,16 +8,15 @@
     height: 798px;
     left: 0px;
     top: 96px;
-    background: #F8F7FC;
-    border-bottom: 1px solid #E3E0ED;
+    background: var(--color-white-lilac);
+    border-bottom: 1px solid #e3e0ed;
 
     &__link1, &__link2 {
-        font-family: 'Inter';
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
-        color: #151F4C;
+        color: var(--color-bunting);
         flex: none;
         order: 0;
         flex-grow: 0;
