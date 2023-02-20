@@ -42,8 +42,10 @@
 	}
 
 	&__button {
+		text-decoration: none;
+		display: inline-block;
 		padding: 10px 20px;
-		color: #ffffff;
+		color: var(--color-white);
 		font-size: 14px;
 		line-height: 16px;
 		background-color: var(--color-blue-ribbon);
@@ -93,7 +95,7 @@
 		}
 
 		&__button {
-			padding: 15px 25px;
+			padding: 10px 25px;
 		}
 	}
 }
