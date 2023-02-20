@@ -15,9 +15,9 @@ function CallToAction() {
                 <button onClick={() => setSelectRole(!selectRole)} className={'toggleEmplyer ' + (selectRole ? 'toggled' : "")}> <img src={buildingIcon} alt="buildingIcon" /> Employer</button>
                 <button onClick={() => setSelectRole(!selectRole)} className={'toggleJob ' + (selectRole ? '' : 'toggled')}> <img src={buildingIcon} alt="buildingIcon" />Job Seeker</button>
             </div>
-            {selectRole ?
-                <div> Employer stuff here</div> :
-                <div> Job Seeker stuff here</div>}
+            {selectRole
+                ? <div> Employer stuff here</div>
+                : <div> Job Seeker stuff here</div>}
         </div>
     );
 }
