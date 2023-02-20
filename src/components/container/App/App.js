@@ -1,12 +1,7 @@
-import HeroSection from '../../components/HeroSection/HeroSection';
-import './App.scss';
+import "./App.scss";
 
 function App() {
-  return (
-    <div className="App">
-      <HeroSection />
-    </div>
-  );
+	return <div className="App"></div>;
 }
 
 export default App;
