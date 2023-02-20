@@ -12,8 +12,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 5%;
+	gap: 3%;
 
+	&__info {
+		padding: 30px 0;
+	}
 	&__info,
 	&__image {
 		flex-basis: 50%;
@@ -40,9 +43,10 @@
 	}
 
 	&__button {
-		padding: 15.5px 24px;
+		padding: 10px 20px;
 		color: #ffffff;
 		font-size: 14px;
+		line-height: 16px;
 		background-color: #0066ff;
 		border: 2px solid #0066ff;
 		border-radius: 8px;
@@ -58,5 +62,30 @@
 @media only screen and (min-width: 1280px) {
 	.HeroSection__title {
 		font-size: 56px;
+	}
+}
+
+@media (max-width: 375px) {
+	.HeroSection {
+		flex-direction: column;
+		width: 100%;
+		margin-top: 25px;
+
+		&__info {
+			margin: 25px;
+		}
+
+		&__info,
+		&__image {
+			flex-basis: 50%;
+			max-width: 100%;
+		}
+
+		&__title {
+			font-size: 36px;
+			font-weight: 700;
+			line-height: 48px;
+			text-align: left;
+		}
 	}
 }

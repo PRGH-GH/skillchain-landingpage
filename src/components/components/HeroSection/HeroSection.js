@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroSection.scss";
-import HeroImage from "./img/hero-image.svg";
+import HeroImage from "./assets/hero-image.svg";
 
 function HeroSection() {
 	return (
@@ -14,6 +14,7 @@ function HeroSection() {
 					SkillChain connects job seekers with top employers to find the perfect
 					match for job vacancies.
 				</p>
+				{/* <Button innerText={'View Jobs'} mode={'hero'} /> */}
 				<a
 					href="https://www.google.de/"
 					target="_blank"
