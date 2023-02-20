@@ -1,22 +1,22 @@
-.CallToAction {
+.ReinforcementStatement {
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 
-    img {     
+    img {
         width: 50vw;
         object-fit: cover;
-        
+
         border-radius: 32px;
     }
 
-    h2{
+    h2 {
         margin-bottom: 0;
     }
 
-    &__underLine{
+    &__underLine {
         width: 25px;
         height: 10px;
         border-radius: 32px;
@@ -25,22 +25,22 @@
 
     &__text {
         width: 35vw;
-        margin: 2vw;     
+        margin: 2vw;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .CallToAction {
+    .ReinforcementStatement {
         height: auto;
         flex-direction: column;
-        margin: 5vw;  
-    
-        img {     
+        margin: 5vw;
+
+        img {
             width: 100%;
         }
-    
+
         &__text {
-            width: 100%;           
+            width: 100%;
         }
     }
-  }
+}
