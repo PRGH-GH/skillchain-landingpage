@@ -1,52 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Philosopher:wght@700&display=swap");
 
 :root {
-	font-size: 16px;
+  font-size: 16px;
 
-	// Font Variables:
-	--inter: "Inter", sans-serif;
-	--philosopher: "Philosopher", sans-serif;
+  // Font Variables:
+  --inter: "Inter", sans-serif;
+  --philosopher: "Philosopher", sans-serif;
 
-	// Color Variables:
-	--color-blue-ribbon: #0066ff;
-	--color-selective-yellow: #ffba00;
-	--color-bunting: #151f4c;
-	--color-white: #ffffff;
-	--color-white-lilac: #f8f7fc;
+  // Color Variables:
+  --color-blue-ribbon: #0066ff;
+  --color-selective-yellow: #ffba00;
+  --color-bunting: #151f4c;
+  --color-white: #ffffff;
+  --color-white-lilac: #f8f7fc;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-family: var(--inter);
+  margin: 0;
+  font-family: var(--inter);
 }
 
 h1 {
-	font-size: 56px;
-	font-weight: 700;
+  font-size: 56px;
+  font-weight: 700;
 }
 
 h2 {
-	font-size: 32px;
-	font-weight: 700;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 h3 {
-	font-size: 20px;
-	font-weight: 700;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 h4 {
-	font-size: 18px;
-	font-weight: 500;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 p {
-	font-size: 16px;
-	font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
 }
