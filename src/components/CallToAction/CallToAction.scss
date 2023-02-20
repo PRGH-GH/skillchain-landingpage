@@ -1,16 +1,5 @@
-$Blue_Ribbon: #0066FF;
-
-h2 {
-    font-size: 32px;
-}
-
-p {
-    font-size: 16px;
-}
-
 .CallToAction {
     height: 100vh;
-
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -19,7 +8,7 @@ p {
     img {     
         width: 50vw;
         object-fit: cover;
-        margin: 5vw;
+        
         border-radius: 32px;
     }
 
@@ -27,14 +16,14 @@ p {
         margin-bottom: 0;
     }
 
-    .underLine{
+    &__underLine{
         width: 25px;
         height: 10px;
         border-radius: 32px;
-        background-color: $Blue_Ribbon;
+        background-color: var(--color-blue-ribbon);
     }
 
-    .actionText {
+    &__text {
         width: 35vw;
         margin: 2vw;     
     }
@@ -50,7 +39,7 @@ p {
             width: 100%;
         }
     
-        .actionText {
+        &__text {
             width: 100%;           
         }
     }
