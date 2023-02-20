@@ -1,0 +1,61 @@
+$Blue_Ribbon: #0066FF;
+
+.CallToAction {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .underLine {
+        width: 15px;
+        height: 5px;
+        border-radius: 32px;
+        background-color: $Blue_Ribbon;
+    }
+
+    .toggleSwitch__wrapper {
+        display: flex;
+        align-items: center;
+
+        p {
+            margin-right: 10px;
+        }
+
+        button {
+            float: left;
+            background-color: var(--color-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #7D7CAC;
+            padding: 3px 15px;
+
+        }
+
+        .toggleEmplyer {
+            border-radius: 25px 0 0 25px;
+
+        }
+
+        .toggleJob {
+            border-radius: 0 25px 25px 0;
+        }
+
+        img {
+            margin: 1px 5px;
+        }
+
+
+        .toggled {
+            background-color: rgba(0, 102, 255, 0.192);
+            border: 1px solid var(--color-blue-ribbon);
+        }
+
+
+    }
+}
