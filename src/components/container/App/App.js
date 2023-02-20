@@ -3,9 +3,7 @@ import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-     
-      <PartnerBanner />
+    <div className="App">  
     
     </div>
   );

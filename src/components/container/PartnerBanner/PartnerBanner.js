@@ -1,10 +1,10 @@
-import React from 'react'
-import './PartnerBanner.scss'
+import React from 'react';
+import './PartnerBanner.scss';
 import Logo from './assets/partnerLogos/prgh-dark-main.svg';
 //this method gonna leads to so many imports so this is the right method?
 
 function PartnerBanner() {
-  const BANNERS = Array(10).fill({ name: "PRGH", src: Logo })  //dev version to add multiple logos
+  const BANNERS = Array(10).fill({ name: "PRGH", src: Logo }); //dev version to add multiple logos
 
   return (
     <div className='PartnerBanner'>
@@ -17,4 +17,4 @@ function PartnerBanner() {
   )
 }
 
-export default PartnerBanner
+export default PartnerBanner;
