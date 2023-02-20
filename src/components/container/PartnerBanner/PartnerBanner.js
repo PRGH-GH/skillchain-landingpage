@@ -8,9 +8,7 @@ function PartnerBanner() {
   return (
     <div className='PartnerBanner'>
       <div>
-        <img alt="start" />
         {banners.map((b, i) => <img key={i} src={b.src} alt={b.name} />)}
-        <img alt="end" />
       </div>
     </div>
   )
