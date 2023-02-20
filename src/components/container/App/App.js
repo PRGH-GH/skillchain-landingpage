@@ -1,4 +1,3 @@
-import PartnerBanner from '../PartnerBanner/PartnerBanner';
 import './App.scss';
 
 function App() {

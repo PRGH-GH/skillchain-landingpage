@@ -1,12 +1,7 @@
-$Blue_Ribbon: #0066FF;
-$Selective_Yellow: #FFBA00;
-$Bunting: #151F4C;
-$Bg_White: #F8F7FC;
-
 .PartnerBanner {
     width: fit-content;
     height: fit-content;
-    background-color: $Bunting;
+    background-color: var(--color-bunting);
 
     div {
         display: flex;
