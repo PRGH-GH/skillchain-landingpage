@@ -14,13 +14,7 @@ function HeroSection() {
 					SkillChain connects job seekers with top employers to find the perfect
 					match for job vacancies.
 				</p>
-				<a
-					href="https://www.google.de/"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<button className="HeroSection__button">View Jobs</button>
-				</a>
+				<button className="HeroSection__button" onClick={()=> window.open('https://www.google.com', '_blank')}>View Jobs</button>
 			</div>
 			<div className="HeroSection__image">
 				<img
