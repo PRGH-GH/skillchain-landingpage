@@ -1,6 +1,6 @@
 import React from 'react'
 import './PartnerBanner.scss'
-import Logo from './../../../resources/prgh-dark-main.svg';
+import Logo from './assets/partnerLogos/prgh-dark-main.svg';
 //this method gonna leads to so many imports so this is the right method?
 
 function PartnerBanner() {
