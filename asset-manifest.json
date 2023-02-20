@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/skillchain-landingpage/static/css/main.5f7d27c7.css",
+    "main.js": "/skillchain-landingpage/static/js/main.54277093.js",
+    "index.html": "/skillchain-landingpage/index.html",
+    "main.5f7d27c7.css.map": "/skillchain-landingpage/static/css/main.5f7d27c7.css.map",
+    "main.54277093.js.map": "/skillchain-landingpage/static/js/main.54277093.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f7d27c7.css",
+    "static/js/main.54277093.js"
+  ]
+}
