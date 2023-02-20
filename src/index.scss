@@ -1,27 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Philosopher&display=swap');
 
-// Font Variables
-$inter: 'Inter', sans-serif;
-$philosopher: 'Philosopher', sans-serif;
-
-//Colour Variables
-$color-blue-ribbon: #0066FF;
-$color-selective-yellow: #FFBA00;
-$color-bunting: #151F4C;
-$color-white: #FFFFFF;
-$color-white-lilac: #F8F7FC;
-
 :root {
   font-size: 16px;
+
+  // Font Variables
+  --inter: 'Inter', sans-serif;
+  --philosopher: 'Philosopher', sans-serif;
+
+  // Colour Variables
+  --color-blue-ribbon: #0066FF;
+  --color-selective-yellow: #FFBA00;
+  --color-bunting: #151F4C;
+  --color-white: #FFFFFF;
+  --color-white-lilac: #F8F7FC;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: $inter;
+  font-family: var(--inter);
 }
 
 h1 {
@@ -38,11 +40,6 @@ h3 {
 
 h4 {
   font-size: 18px;
-}
-
-h1, h2 , h3, h4 {
-  font-family: $inter;
-
 }
 
 p {
