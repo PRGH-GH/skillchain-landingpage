@@ -28,7 +28,7 @@
 
     &__text {
       font-size: calc(16px + 2 * (100vw / 1280));
-      color: #7d7cac;
+      color: var(--color-text);
       line-height: 1.5em;
     }
 
