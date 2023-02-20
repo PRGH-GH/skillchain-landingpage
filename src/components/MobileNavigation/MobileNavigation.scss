@@ -1,4 +1,4 @@
-.MobileNavigation-wrapper {
+.MobileNavigation__wrapper {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
     background: #F8F7FC;
     border-bottom: 1px solid #E3E0ED;
 
-    &__link1 &__link2 {
+    &__link1, &__link2 {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 600;
