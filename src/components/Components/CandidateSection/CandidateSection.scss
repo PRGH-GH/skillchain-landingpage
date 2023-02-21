@@ -5,19 +5,36 @@
     padding: 96px 126px;
     gap: 10px;
     height: 992.38px;
-    left: 0px;
-    background: #F8F7FC;
+    background: var(--color-white-lilac);
 
-    &-wrapper__title {
+    &__wrapper__title {
         height: 43px;
-        font-family: 'Inter';
         font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
         line-height: 133%;
-        color: #151F4C;
+        color: var(--color-bunting);
         flex: none;
         order: 0;
         flex-grow: 0;
+
+        &__rec {
+            width: 24px;
+            height: 8px;
+            background: #0066FF;
+            border-radius: 4px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+    }
+
+    &__wrapper__viewmore {
+        position: absolute;
+        top: 16%;
+        right: 10%;
+
+        &__text {
+            color: #7D7CAC;
+        }
+
     }
 }
