@@ -7,7 +7,7 @@
         display: flex;
         flex-direction: row;
         gap: 4vw;
-        animation: slide 10s 1s linear infinite;
+        animation: slide 20s 1s linear infinite;
     }
 
     img {
@@ -25,11 +25,19 @@
         margin-left: 0%;
     }
 
+    25% {
+        margin-left: -25%;
+    }
+
     50% {
+        margin-left: -50%;
+    }
+
+    75% {
         margin-left: -25%;
     }
 
     100% {
-        margin-left: -50%;
+        margin-left: 0%;
     }
 }
