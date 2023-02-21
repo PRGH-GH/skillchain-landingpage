@@ -1,7 +1,6 @@
-import React from 'react';
-import './CandidateProfileCard.scss';
-import CandidateImage from './assets/candidateImage.svg';
-import { staticCandidateCards } from '../../state/models/staticCandidateCards';
+import React from "react";
+import "./CandidateProfileCard.scss";
+import CandidateImage from "./assets/candidateImage.svg";
 
 function CandidateProfileCard(props) {
   const { candidate } = props;
@@ -17,24 +16,20 @@ function CandidateProfileCard(props) {
           ></img>
           <div>
             <h3 className="CandidateProfileCard__header__name">
-              {staticCandidateCards.name}
+              {candidate.name}
             </h3>
             <p className="CandidateProfileCard__header__title">
-              {staticCandidateCards.title}
+              {candidate.title}
             </p>
           </div>
         </div>
         <div className="CandidateProfileCard__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
-          justo id malesuada congue. Proin bibendum, diam a faucibus accumsan,
-          sapien velit congue libero, id placerat velit velit et sapien.
+          {candidate.description}
         </div>
         <ul className="CandidateProfileCard__tags">
-          <li>Skill tag</li>
-          <li>Skill Tag</li>
-          {/* {candidate.tags.map((tag, i) => (
-          <li key={i}>{tag}</li>
-        ))} */}
+          {candidate.tags.map((tag, i) => (
+            <li key={i}>{tag}</li>
+          ))}
         </ul>
         <a
           className="CandidateProfileCard__button"
