@@ -1,18 +1,18 @@
 import React from 'react'
 import "./CandidateSection.scss"
-import ViewMoreIcon from "G:\kickStart\Project\skillchain-landingpage\icons\Vector.png"
+import ViewMoreIcon from "./../../icons/Vector.png"
 
 function CandidateSection() {
   return (
     <div className='CandidateSection'>
-        <div className='CandidateSection-wrapper'>
-            <h2 className='CandidateSection-wrapper__title'>
+        <div className='CandidateSection__wrapper'>
+            <h2 className='CandidateSection__wrapper__title'>
                 Meet Candidates
-                <div className='CandidateSection-wrapper__title_rec'></div>
+                <div className='CandidateSection__wrapper__title__rec'></div>
             </h2>
-            <a href='#' className='CandidateSection-wrapper__viewmore_text'>
+            <a href='#' className='CandidateSection__wrapper__viewmore__text'>
                 View More
-                <img className='CandidateSection-wrapper__viewmore_icon' src={ViewMoreIcon} />
+                <img className='CandidateSection__wrapper__viewmore__icon' src={ViewMoreIcon} />
             </a>
         </div>
     </div>
