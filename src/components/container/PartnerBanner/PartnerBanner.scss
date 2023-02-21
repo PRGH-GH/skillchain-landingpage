@@ -1,43 +1,33 @@
 .PartnerBanner {
-    width: fit-content;
-    height: fit-content;
+    width: 100%;
+    overflow: hidden;
     background-color: var(--color-bunting);
 
     div {
+        position: relative;
         display: flex;
         flex-direction: row;
-        gap: 4vw;
         animation: slide 20s 1s linear infinite;
+        
     }
 
     img {
-        width: 10vw;
-        height: 5vw;
+        height: 2em;
         object-fit: contain;
-        left: 0%;
-        top: 0%;
-        margin: 1vw;
+        margin: 1.5em;
     }
 }
 
 @keyframes slide {
     0% {
-        margin-left: 0%;
-    }
-
-    25% {
-        margin-left: -25%;
+        transform: translateX(1%);
     }
 
     50% {
-        margin-left: -50%;
-    }
-
-    75% {
-        margin-left: -25%;
+        transform: translateX(-50%);
     }
 
     100% {
-        margin-left: 0%;
+        transform: translateX(1%);
     }
 }
