@@ -10,13 +10,13 @@ function CallToAction() {
         <div className='CallToAction'>
             <h2>Let's Get Started!</h2>
             <div className='underLine' />
-            <div className='toggleSwitch__wrapper'>
+            <div className='CallToAction__toggleSwitch-wrapper'>
                 <p>Select your role:</p>
-                <button onClick={() => setSelectRole(!selectRole)} className={'toggleEmplyer ' + (selectRole ? 'toggled' : '')}>
+                <button onClick={() => setSelectRole(!selectRole)} className={'toggleOne ' + (selectRole ? 'toggled' : '')}>
                     <img src={buildingIcon} alt="buildingIcon" />
                     Employer
                 </button>
-                <button onClick={() => setSelectRole(!selectRole)} className={'toggleJob ' + (selectRole ? '' : 'toggled')}>
+                <button onClick={() => setSelectRole(!selectRole)} className={'toggleTwo ' + (selectRole ? '' : 'toggled')}>
                     <img src={buildingIcon} alt="buildingIcon" />
                     Job Seeker
                 </button>
