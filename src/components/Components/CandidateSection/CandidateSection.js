@@ -12,7 +12,7 @@ function CandidateSection() {
             </h2>
             <div className='CandidateSection__wrapper__viewmore'>
               <a href='#' className='CandidateSection__wrapper__viewmore__text'>
-                  View More
+                  View More {" "}
                   <img className='CandidateSection__wrapper__viewmore__icon' src={ViewMoreIcon} />
               </a>
             </div>

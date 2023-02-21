@@ -19,7 +19,7 @@
         &__rec {
             width: 24px;
             height: 8px;
-            background: #0066FF;
+            background: var(--color-blue-ribbon);
             border-radius: 4px;
             flex: none;
             order: 0;
@@ -30,10 +30,11 @@
     &__wrapper__viewmore {
         position: absolute;
         top: 16%;
-        right: 10%;
+        right: 12%;
 
         &__text {
             color: #7D7CAC;
+            text-decoration: none;
         }
 
     }
