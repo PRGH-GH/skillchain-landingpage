@@ -22,6 +22,10 @@
 
         p {
             margin-right: 10px;
+            color: var(--color-text);
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 2em;
         }
 
         button {
@@ -30,18 +34,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid #7D7CAC;
+            border: 1px solid var(--color-text);
             padding: 3px 15px;
 
         }
 
         .toggleOne {
-            border-radius: 25px 0 0 25px;
+            border-radius: 10px 0 0 10px;
 
         }
 
         .toggleTwo {
-            border-radius: 0 25px 25px 0;
+            border-radius: 0 10px 10px 0;
         }
 
         img {
