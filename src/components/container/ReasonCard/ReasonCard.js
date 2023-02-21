@@ -6,10 +6,16 @@ function ReasonCard({ icon, title, description }) {
     <div className="ReasonCard">
       <div className="ReasonCard__icon">
         <div className="ReasonCard__icon__background"></div>
-          <img className="ReasonCard__icon__background__image" src={icon.path} alt={icon.description} />
+        <img
+          className="ReasonCard__icon__background__image"
+          src={icon.path}
+          alt={icon.description}
+        />
       </div>
-      <div className="ReasonCard__title">{title}</div>
-      <div className="ReasonCard__description">{description}</div>
+      <h3 className="ReasonCard__title">{title}</h3>
+      <div className="ReasonCard__description">
+        <p>{description}</p>
+      </div>
     </div>
   );
 }
