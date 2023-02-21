@@ -12,7 +12,7 @@ function CallToAction() {
             <div className='underLine' />
             <div className='toggleSwitch__wrapper'>
                 <p>Select your role:</p>
-                <button onClick={() => setSelectRole(!selectRole)} className={'toggleEmplyer ' + (selectRole ? 'toggled' : "")}>
+                <button onClick={() => setSelectRole(!selectRole)} className={'toggleEmplyer ' + (selectRole ? 'toggled' : '')}>
                     <img src={buildingIcon} alt="buildingIcon" />
                     Employer
                 </button>
