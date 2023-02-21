@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/skillchain-landingpage/static/css/main.f3c426c4.css",
+    "main.css": "/skillchain-landingpage/static/css/main.cb2e5d03.css",
     "main.js": "/skillchain-landingpage/static/js/main.54277093.js",
     "index.html": "/skillchain-landingpage/index.html",
-    "main.f3c426c4.css.map": "/skillchain-landingpage/static/css/main.f3c426c4.css.map",
+    "main.cb2e5d03.css.map": "/skillchain-landingpage/static/css/main.cb2e5d03.css.map",
     "main.54277093.js.map": "/skillchain-landingpage/static/js/main.54277093.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3c426c4.css",
+    "static/css/main.cb2e5d03.css",
     "static/js/main.54277093.js"
   ]
 }
