@@ -29,18 +29,20 @@
       line-height: 1.3em;
     }
   }
-  
+
   &__info {
     &__title {
       margin: 0;
       color: var(--color-bunting);
       line-height: 1.3em;
     }
+
     &__working-time {
       margin: 0;
       color: var(--color-text);
     }
   }
+
   &__description {
     color: var(--color-text);
     font-weight: 500;

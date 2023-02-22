@@ -3,7 +3,6 @@ import "./FeaturedJobCard.scss";
 
 function FeaturedJobCard({ job, logoNameToPath }) {
   return (
-    <>
       <div className="FeaturedJobCard">
         <div className="FeaturedJobCard__header">
           <img
@@ -37,7 +36,6 @@ function FeaturedJobCard({ job, logoNameToPath }) {
           Apply
         </a>
       </div>
-    </>
   );
 }
 
