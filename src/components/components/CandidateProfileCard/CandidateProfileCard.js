@@ -1,6 +1,5 @@
 import React from "react";
 import "./CandidateProfileCard.scss";
-import CandidateImage from "./assets/candidateImage.svg";
 
 function CandidateProfileCard(props) {
   const { candidate } = props;
@@ -11,7 +10,7 @@ function CandidateProfileCard(props) {
         <div className="CandidateProfileCard__header">
           <img
             className="CandidateProfileCard__header__img"
-            src={CandidateImage}
+            src={candidate.image}
             alt="Smiling face of a candidate"
           ></img>
           <div>
