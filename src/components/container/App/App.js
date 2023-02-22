@@ -1,4 +1,3 @@
-import MobileNavigation from '../../MobileNavigation/MobileNavigation';
 import './App.scss';
 
 function App() {
