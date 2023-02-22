@@ -28,23 +28,29 @@
         }
     }
 
-    &__wrapper__viewmoretop {
-        position: absolute;
-        top: 22%;
-        right: 12%;
+    &__wrapper__viewmore {
 
         &__text {
             color: #7D7CAC;
             text-decoration: none;
         }
 
+        &--top {
+            display: inline-block;
+        }
+
+        &--bottom {
+            display: none;
+        }
+
+        @media only screen and (max-width: 540px) {
+            &--top {
+                display: none;
+            }
+    
+            &--bottom {
+                display: block;
+            }
+        }
     }
 }
-
-@media only screen and (max-width: 540px) {
-        .CandidateSection__wrapper__viewmoretop {
-      position: absolute;
-      top: 95%;
-      left: 40%;
-    }
-  }

@@ -10,10 +10,17 @@ function CandidateSection() {
                 Meet Candidates
                 <div className='CandidateSection__wrapper__title__rec'></div>
             </h2>
-            <div className='CandidateSection__wrapper__viewmoretop'>
-              <a href='#' className='CandidateSection__wrapper__viewmoretop__text'>
-                  View More {" "}
-                  <img className='CandidateSection__wrapper__viewmoretop__icon' src={ViewMoreIcon} />
+            <div className='CandidateSection__wrapper__viewmore CandidateSection__wrapper__viewmore--top'>
+              <a href='#' className='CandidateSection__wrapper__viewmore__text'>
+                  View More {" "} top
+                  <img className='CandidateSection__wrapper__viewmore__icon' src={ViewMoreIcon} />
+              </a>
+            </div>
+            {/** Insert cards here */}
+            <div className='CandidateSection__wrapper__viewmore CandidateSection__wrapper__viewmore--bottom'>
+              <a href='#' className='CandidateSection__wrapper__viewmore__text'>
+                  View More {" "} bottom
+                  <img className='CandidateSection__wrapper__viewmore__icon' src={ViewMoreIcon} />
               </a>
             </div>
         </div>
