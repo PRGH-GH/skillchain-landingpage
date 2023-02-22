@@ -1,15 +1,14 @@
 .PartnerBanner {
     width: 100%;
+    height: (2em + 1.25em *2 );
     overflow: hidden;
-    background-color: var(--color-bunting); 
+    background-color: var(--color-bunting);
+    position: relative;
 
     div {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        // transform: translateX(-10vw);
-        animation: slide 20s 1s linear infinite;
-
+        width: max-content;
+        position: absolute;    
+        // animation: slide 20s 1s linear infinite;
     }
 
     img {
@@ -19,82 +18,82 @@
     }
 }
 
-@media only screen and (max-width: 425px) {
+// @media only screen and (max-width: 425px) {
     @keyframes slide {
         0% {
-            transform: translateX(1vw);
+            transform: translateX(0);
         }
 
         50% {
-            transform: translateX(-300vw);
+            transform: translateX(-100%);
         }
 
         100% {
-            transform: translateX(1vw);
+            transform: translateX(0);
         }
     }
-}
+// }
 
-@media only screen and (min-width: 425px) {
-    @keyframes slide {
-        0% {
-            transform: translateX(1vw);
-        }
+// @media only screen and (min-width: 425px) {
+//     @keyframes slide {
+//         0% {
+//             transform: translateX(1vw);
+//         }
 
-        50% {
-            transform: translateX(-265vw);
-        }
+//         50% {
+//             transform: translateX(-265vw);
+//         }
 
-        100% {
-            transform: translateX(1vw);
-        }
-    }
-}
+//         100% {
+//             transform: translateX(1vw);
+//         }
+//     }
+// }
 
-@media only screen and (min-width: 768px) {
-    @keyframes slide {
-        0% {
-            transform: translateX(1vw);
-        }
+// @media only screen and (min-width: 768px) {
+//     @keyframes slide {
+//         0% {
+//             transform: translateX(1vw);
+//         }
 
-        50% {
-            transform: translateX(-140vw);
-        }
+//         50% {
+//             transform: translateX(-140vw);
+//         }
 
-        100% {
-            transform: translateX(1vw);
-        }
-    }
-}
+//         100% {
+//             transform: translateX(1vw);
+//         }
+//     }
+// }
 
-@media only screen and (min-width: 1024px) {
-    @keyframes slide {
-        0% {
-            transform: translateX(0.5vw);
-        }
+// @media only screen and (min-width: 1024px) {
+//     @keyframes slide {
+//         0% {
+//             transform: translateX(0.5vw);
+//         }
 
-        50% {
-            transform: translateX(-95vw);
-        }
+//         50% {
+//             transform: translateX(-95vw);
+//         }
 
-        100% {
-            transform: translateX(0.5vw);
-        }
-    }
-}
+//         100% {
+//             transform: translateX(0.5vw);
+//         }
+//     }
+// }
 
-@media only screen and (min-width: 1440px) {
-    @keyframes slide {
-        0% {
-            transform: translateX(0.5vw);
-        }
+// @media only screen and (min-width: 1440px) {
+//     @keyframes slide {
+//         0% {
+//             transform: translateX(0.5vw);
+//         }
 
-        50% {
-            transform: translateX(-65vw);
-        }
+//         50% {
+//             transform: translateX(-65vw);
+//         }
 
-        100% {
-            transform: translateX(0.5vw);
-        }
-    }
-}
+//         100% {
+//             transform: translateX(0.5vw);
+//         }
+//     }
+// }
