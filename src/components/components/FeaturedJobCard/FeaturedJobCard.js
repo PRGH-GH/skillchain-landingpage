@@ -1,40 +1,30 @@
 import React from "react";
-import { staticFeaturedJobs } from "../../state/models/staticFeaturedJobs";
 import "./FeaturedJobCard.scss";
 
-
-function FeaturedJobCard({job, logoNameToPath}) {
+function FeaturedJobCard({ job, logoNameToPath }) {
   return (
     <>
       <div className="FeaturedJobCard">
         <div className="FeaturedJobCard__header">
           <img
             className="FeaturedJobCard__header__img"
-            src="logoNameToPath"
+            src={logoNameToPath}
             alt="Company Logo"
           ></img>
           <div>
-            <h3 className="FeaturedJobCard__header__company">
-              {staticFeaturedJobs.company}
-            </h3>
-            <p className="FeaturedJobCard__header__location">
-              {staticFeaturedJobs.location}
-            </p>
+            <h3 className="FeaturedJobCard__header__company">{job.company}</h3>
+            <p className="FeaturedJobCard__header__location">{job.location}</p>
           </div>
         </div>
         <div className="FeaturedJobCard__info">
-          <h3 className="FeaturedJobCard__info__title">
-            {staticFeaturedJobs.title}
-          </h3>
+          <h3 className="FeaturedJobCard__info__title">{job.title}</h3>
           <p className="FeaturedJobCard__info__working-time">
-            {staticFeaturedJobs.workingTime}
+            {job.workingTime}
           </p>
         </div>
-        <div className="FeaturedJobCard__description">
-          {staticFeaturedJobs.description}
-        </div>
+        <div className="FeaturedJobCard__description">{job.description}</div>
         <ul className="FeaturedJobCard__tags">
-          {staticFeaturedJobs.tags.map((tag, i) => (
+          {job.tags.map((tag, i) => (
             <li key={i}>{tag}</li>
           ))}
         </ul>

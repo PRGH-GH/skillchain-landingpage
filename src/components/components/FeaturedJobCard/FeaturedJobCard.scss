@@ -29,6 +29,7 @@
       line-height: 1.3em;
     }
   }
+  
   &__info {
     &__title {
       margin: 0;
@@ -40,7 +41,7 @@
       color: var(--color-text);
     }
   }
-  &__description{
+  &__description {
     color: var(--color-text);
     font-weight: 500;
     font-size: 14px;
