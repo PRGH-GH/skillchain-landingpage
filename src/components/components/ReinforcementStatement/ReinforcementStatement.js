@@ -7,14 +7,14 @@ function ReinforcementStatement() {
   return (
     <div className="Reinforcement">
       <div className="Reinforcement__image">
-        <img src={ReinforcementImage} alt=" Reinforcement Image" />
+        <img src={ReinforcementImage} alt="Reinforcement Image" />
       </div>
       <div className="Reinforcement__statement">
-        <h2 className="Reinforcement__header">
+        <h2 className="Reinforcement__statement__header">
           Unleash your potential with SkillChain
         </h2>
-        <u className="Reinforcement__underline"></u>
-        <p className="Reinforcement__text">
+        <u className="Reinforcement__statement__underline"></u>
+        <p className="Reinforcement__statement__text">
           SkillChain is a modern job search platform that connects job seekers
           with top employers to find the perfect match for job vacancies. It
           uses the latest technologies, including AI, to offer a personalized
