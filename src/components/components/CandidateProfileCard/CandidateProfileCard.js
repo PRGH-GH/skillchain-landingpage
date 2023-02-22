@@ -1,9 +1,7 @@
 import React from "react";
 import "./CandidateProfileCard.scss";
 
-function CandidateProfileCard(props) {
-  const { candidate } = props;
-
+function CandidateProfileCard({ candidate }) {
   return (
     <>
       <div className="CandidateProfileCard">
