@@ -7,9 +7,7 @@ function MobileNavigation() {
             <div className='MobileNavigation__wrapper'>
                 <a href='#' className='MobileNavigation__wrapper__link1'>Find Candidates</a>
                 <a href='#' className='MobileNavigation__wrapper__link2'>Find Jobs</a>
-                <button className='MobileNavigation__wrapper__button'>
-                    <a href='#' target="_blank">Sign In</a>
-                </button>
+                <a href='#' className='MobileNavigation__wrapper__button'>Sign in</a>
             </div>
         </div>
     );
