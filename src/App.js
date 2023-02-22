@@ -1,5 +1,6 @@
+
 import HeroSection from '../../components/HeroSection/HeroSection';
-import './App.scss';
+//import './App.scss';
 
 function App() {
   return (
