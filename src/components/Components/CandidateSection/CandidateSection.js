@@ -1,6 +1,6 @@
 import React from 'react'
 import "./CandidateSection.scss"
-import ViewMoreIcon from "./../../icons/Vector.png"
+import ViewMoreIcon from "./../../assets/viewMoreIcon.png"
 
 function CandidateSection() {
   return (
