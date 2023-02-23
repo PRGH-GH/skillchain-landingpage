@@ -2,8 +2,6 @@
   padding-top: 5%;
   max-width: 1260px;
   width: 80%;
-  max-height: 673px;
-  height: 80vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -42,6 +40,7 @@
       background-color: var(--color-blue-ribbon);
       border: 2px solid var(--color-blue-ribbon);
       border-radius: 8px;
+      cursor: pointer;
     }
   }
 
@@ -50,11 +49,19 @@
     flex-basis: 50%;
     max-width: 50%;
   }
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+  }
 }
 
 .HeroSection__image {
   img {
     max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
   }
 }
 

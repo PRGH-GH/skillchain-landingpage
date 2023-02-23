@@ -24,7 +24,7 @@ function PartnerBanner() {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
- 
+
   return (
     <div className="PartnerBanner">
       <Carousel
@@ -35,11 +35,9 @@ function PartnerBanner() {
         transitionDuration={750}
         arrows={false}
       >
-           <img alt="start"/>
-        {banners.map((b, i) => (     
-            <img key={i} src={b.src} alt={b.name} />    
+        {banners.map((b, i) => (
+          <img key={i} src={b.src} alt={b.name} />
         ))}
-           <img alt="end"/>
       </Carousel>
     </div>
   );
