@@ -1,24 +1,46 @@
 .FeaturedJobs {
-    display: flex;
-    flex-direction: column;
-    gap: 59px;
-
-    max-width: var(--section-max-width);
-    padding: 96px 0;
-
+    padding: 96px 64px;
     background-color: var(--color-white-lilac);
+
+    &__contentWrapper {
+        width: 100%;
+        max-width: 1260px;
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 59px;
+    }
 
     &__heading {
         display: flex;
+        align-items: flex-end;
         justify-content: space-between;
     }
 
+    &__heading h2 {
+        position: relative;
+        margin: 0;
+
+        &::after {
+            content: " ";
+            position: absolute;
+            display: block;
+            width: 24px;
+            height: 8px;
+            border-radius: 4px;
+            margin-top: 5px;
+            background: var(--color-blue-ribbon);
+        }
+    }
+
     &__viewMoreLink {
-        color: #7D7CAC;
+        color: var(--color-text);
         text-decoration: none;
 
         &__icon {
-            vertical-align: baseline;
+            margin-left: 5px;
+            vertical-align: middle;
         }
     }
 
