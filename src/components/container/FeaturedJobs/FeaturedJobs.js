@@ -26,7 +26,7 @@ function FeaturedJobs() {
                 </div>
                 <div className="FeaturedJobs__cardContainer">
                     {staticFeaturedJobs.map((job) => (
-                        <FeaturedJobCard job={{...job, logo: logoNameToPath[job.logoName]}} />
+                        <FeaturedJobCard key={job.id} job={{...job, logo: logoNameToPath[job.logoName]}} />
                     ))}
                 </div>
             </div>
