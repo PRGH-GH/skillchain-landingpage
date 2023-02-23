@@ -1,62 +1,73 @@
 .CandidateSection {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 96px 126px;
-    gap: 10px;
+    padding: 96px 64px;
     background: var(--color-white-lilac);
 
-    @media screen and (max-width: 480px) {
-        padding: 64px 24px;
-        align-items: center;
-    }
+    &__wrapper {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
 
-    &__wrapper__title {
-        height: 43px;
-        font-style: normal;
-        line-height: 133%;
-        color: var(--color-bunting);
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        text-align: left;
-
-        &__rec {
-            width: 24px;
-            height: 8px;
-            background: var(--color-blue-ribbon);
-            border-radius: 4px;
-            flex: none;
-            order: 0;
-            flex-grow: 0;
-        }
-    }
-
-    &__wrapper__viewmore {
-
-        &__text {
-            color: #7D7CAC;
-            text-decoration: none;
-        }
-
-        &--top {
+        &__title {
             display: flex;
-            justify-self: right;
-        }
+            flex-direction: row;
+            justify-content: space-between;
 
-        &--bottom {
-            display: none;
-        }
-
-        @media only screen and (max-width: 480px) {
-            &--top {
-                display: none;
+            &__text {
+                color: var(--color-bunting);
+                margin: 0;
+    
+                &__rec {
+                    width: 24px;
+                    height: 8px;
+                    background: var(--color-blue-ribbon);
+                    border-radius: 4px;
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                }
             }
     
-            &--bottom {
-                display: block;
-                position: absolute;
-                left: 10%;
+            &__viewmore {
+                &__icon {
+                    color: var(--color-text);
+                }
+    
+                &__text {
+                    color: #7D7CAC;
+                    text-decoration: none;
+                }
+    
+                &--top {
+                    display: flex;
+                    justify-self: right;
+                }
+    
+                &--bottom {
+                    display: none;
+                }
+    
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+        align-items: center;
+        padding: 0px 24px;
+        
+        &__wrapper__title {
+            flex-direction: column;
+
+            &__viewmore {
+                &--top {
+                    display: none;
+                }
+        
+                &--bottom {
+                    display: flex;
+                    align-items: flex-end;
+                }
             }
         }
     }
