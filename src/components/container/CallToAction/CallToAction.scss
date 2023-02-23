@@ -1,0 +1,60 @@
+.CallToAction {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .underLine {
+        width: 15px;
+        height: 5px;
+        border-radius: 32px;
+        background-color: var(--color-blue-ribbon);
+    }
+
+    .CallToAction__toggleSwitch-wrapper {
+        display: flex;
+        align-items: center;
+
+        p {
+            margin-right: 10px;
+            color: var(--color-text);
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 2em;
+        }
+
+        button {
+            float: left;
+            background-color: var(--color-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--color-text);
+            padding: 3px 15px;
+
+        }
+
+        .toggleOne {
+            border-radius: 16px 0 0 16px;
+
+        }
+
+        .toggleTwo {
+            border-radius: 0 16px 16px 0;
+        }
+
+        img {
+            margin: 1px 5px;
+        }
+
+        .toggled {
+            background-color: rgba(0, 102, 255, 0.192);
+            border: 1px solid var(--color-blue-ribbon);
+        }
+    }
+}
