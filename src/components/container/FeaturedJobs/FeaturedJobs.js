@@ -17,7 +17,7 @@ function FeaturedJobs() {
             <div className="FeaturedJobs__contentWrapper">
                 <div className="FeaturedJobs__heading">
                     <h2>Featured Jobs</h2>
-                    <a className="FeaturedJobs__viewMoreLink" href="#">
+                    <a className="FeaturedJobs__viewMoreLink" href="/#">
                         <span className="FeaturedJobs__viewMoreLink__text">View More</span>
                         <span className="FeaturedJobs__viewMoreLink__icon">
                             <img src={viewMoreIcon} alt="view more link icon" />
