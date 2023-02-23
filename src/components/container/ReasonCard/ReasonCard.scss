@@ -43,7 +43,7 @@
   }
 
   &__description {
-    color: #7d7cac;
+    color: var(--color-text);
     line-height: 150%;
     flex: none;
     order: 2;
