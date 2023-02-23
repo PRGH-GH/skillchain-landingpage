@@ -27,5 +27,4 @@ function CandidateSection() {
     </div>
   )
 }
-
 export default CandidateSection
