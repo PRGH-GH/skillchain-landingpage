@@ -40,17 +40,15 @@
         }
 
         &--top {
-            display: inline-block;
-            position: absolute;
-            top: 15%;
-            right: 8%;
+            display: flex;
+            justify-self: right;
         }
 
         &--bottom {
             display: none;
         }
 
-        @media only screen and (max-width: 540px) {
+        @media only screen and (max-width: 480px) {
             &--top {
                 display: none;
             }
