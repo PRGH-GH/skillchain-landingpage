@@ -17,7 +17,7 @@ function FeaturedJobs() {
             <div className="FeaturedJobs__contentWrapper">
                 <div className="FeaturedJobs__heading">
                     <h2>Featured Jobs</h2>
-                    <a className="FeaturedJobs__viewMoreLink" href="#">
+                    <a className="FeaturedJobs__viewMoreLink" href="/#">
                         <span className="FeaturedJobs__viewMoreLink__text">View More</span>
                         <span className="FeaturedJobs__viewMoreLink__icon">
                             <img src={viewMoreIcon} alt="view more link icon" />
@@ -26,7 +26,7 @@ function FeaturedJobs() {
                 </div>
                 <div className="FeaturedJobs__cardContainer">
                     {staticFeaturedJobs.map((job) => (
-                        <FeaturedJobCard job={{...job, logo: logoNameToPath[job.logoName]}} />
+                        <FeaturedJobCard key={job.id} job={{...job, logo: logoNameToPath[job.logoName]}} />
                     ))}
                 </div>
             </div>
