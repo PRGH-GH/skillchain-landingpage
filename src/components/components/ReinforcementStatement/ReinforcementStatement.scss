@@ -6,11 +6,9 @@
 
   &__image {
     border-radius: 8px;
-    max-width: 50%;
   }
 
   &Reinforcement__statement {
-    max-width: 50%;
 
     &__header {
       color: var(--color-bunting);
@@ -40,6 +38,7 @@
     height: auto;
     flex-direction: column;
     margin: 5vw;
+    gap: 0;
 
     &__image {
       width: 100%;
