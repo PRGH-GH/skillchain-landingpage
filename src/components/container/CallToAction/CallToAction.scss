@@ -58,3 +58,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 425px) {
+    .CallToAction {
+        p {
+            display: none;
+        }
+
+        .CallToAction__toggleSwitch-wrapper {
+            margin: 1em;
+        }
+    }
+}
