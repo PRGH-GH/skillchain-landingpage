@@ -1,7 +1,7 @@
 .Navbar {
   width: 90%;
-  height: 50px;
-  margin: 0;
+  height: 100px;
+  margin: 0 auto;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -20,10 +20,9 @@
     flex: 3;
     gap: 2em;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
     
     .Navbar__links {
-      font-family: var(--inter);
       color: var(--color-bunting);
       text-decoration: none;
       font-size: 14px;
@@ -33,10 +32,10 @@
     .Navbar__btn {
       padding: 16px;
       color: var(--color-blue-ribbon);
+      background-color: var(--color-white);
       border-radius: 8px;
-      outline: 2px solid;
-      outline-color: var(--color-blue-ribbon);
-      font-family: var(--inter);
+      border: 1px solid var(--color-blue-ribbon)
+     
     }
   }
 }

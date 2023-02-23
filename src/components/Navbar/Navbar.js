@@ -1,12 +1,13 @@
 import React from "react"
 import "./Navbar.scss"
+import Logo from ./../../assets/skillChain.svg 
 
 
 function Navbar() {
   return (
     <div className="Navbar">
         <div className="Navbar__left">
-            <div className="Navbar__icon"><img alt="Logo" src="./../../assets/skillChain.svg"/></div>
+            <div className="Navbar__icon"><img alt="Logo" src={Logo}/></div>
         </div>
         <div className="Navbar__right">
             <div className="Navbar__links"><a href="#">Find Candidates</a></div>
