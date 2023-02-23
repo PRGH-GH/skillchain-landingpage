@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from 'assets/skillChainLogoLight.svg'; 
+import logo from './assets/skillChainLogoLight.svg'; 
 import './Navbar.scss';
 
 
