@@ -1,4 +1,5 @@
 import { staticFeaturedJobs } from '../../../state/models/staticFeaturedJobs';
+import FeaturedJobCard from '../../components/FeaturedJobCard/FeaturedJobCard';
 import viewMoreIcon from './assets/icons/viewMore.svg';
 import amazonLogo from './assets/logos/amazon.png';
 import quantumLogo from './assets/logos/quantum.png';
@@ -25,7 +26,7 @@ function FeaturedJobs() {
                 </div>
                 <div className="FeaturedJobs__cardContainer">
                     {staticFeaturedJobs.map((job) => (
-                        job.title
+                        <FeaturedJobCard job={{...job, logo: logoNameToPath[job.logoName]}} />
                     ))}
                 </div>
             </div>
