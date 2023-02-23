@@ -1,0 +1,83 @@
+.FeaturedJobCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 27px 24px;
+  gap: 1em;
+  border-radius: 1em;
+  width: 25em;
+  height: 20.5em;
+  background-color: var(--color-white);
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-bottom: 5px;
+
+    &__company {
+      margin: 0;
+      color: var(--color-text);
+      line-height: 1.3em;
+    }
+
+    &__location {
+      margin: 0;
+      color: var(--color-blue-ribbon);
+      font-weight: 600;
+      line-height: 1.3em;
+    }
+  }
+
+  &__info {
+    &__title {
+      margin: 0;
+      color: var(--color-bunting);
+      line-height: 1.3em;
+    }
+
+    &__working-time {
+      margin: 0;
+      color: var(--color-text);
+    }
+  }
+
+  &__description {
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+  }
+
+  &__tags {
+    list-style-type: none;
+    display: flex;
+    gap: 0.5em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5em;
+
+    li {
+      color: var(--color-blue-ribbon);
+      background: rgba(0, 102, 255, 0.05);
+      padding: 4.5px 12px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.3em;
+      border-radius: 1em;
+    }
+  }
+
+  &__button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 9px 16px;
+    color: var(--color-white-lilac);
+    background-color: var(--color-blue-ribbon);
+    border-radius: 0.5em;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1em;
+  }
+}
