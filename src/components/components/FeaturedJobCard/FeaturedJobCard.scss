@@ -5,15 +5,23 @@
   padding: 27px 24px;
   gap: 1em;
   border-radius: 1em;
-  width: 25em;
-  height: 20.5em;
+  width: 22em;
+  min-height: 20.5em;
   background-color: var(--color-white);
+
+  @media screen and (max-width: 1260px) {
+    margin: auto;
+  }
 
   &__header {
     display: flex;
     flex-direction: row;
     gap: 1em;
     margin-bottom: 5px;
+
+    &__img {
+      flex-shrink: 0;
+    }
 
     &__company {
       margin: 0;
