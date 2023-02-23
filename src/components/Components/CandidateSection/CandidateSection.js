@@ -12,14 +12,14 @@ function CandidateSection() {
             </h2>
             <div className='CandidateSection__wrapper__viewmore CandidateSection__wrapper__viewmore--top'>
               <a href='#' className='CandidateSection__wrapper__viewmore__text'>
-                  View More {" "} top
+                  View More {" "}
                   <img className='CandidateSection__wrapper__viewmore__icon' src={ViewMoreIcon} />
               </a>
             </div>
             {/** Insert cards here */}
             <div className='CandidateSection__wrapper__viewmore CandidateSection__wrapper__viewmore--bottom'>
               <a href='#' className='CandidateSection__wrapper__viewmore__text'>
-                  View More {" "} bottom
+                  View More {" "}
                   <img className='CandidateSection__wrapper__viewmore__icon' src={ViewMoreIcon} />
               </a>
             </div>
