@@ -1,0 +1,71 @@
+.CandidateSection {
+    padding: 96px 64px;
+    background: var(--color-white-lilac);
+
+    &__wrapper {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &__text {
+                color: var(--color-bunting);
+                margin: 0;
+    
+                &__rec {
+                    width: 24px;
+                    height: 8px;
+                    background: var(--color-blue-ribbon);
+                    border-radius: 4px;
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                }
+            }
+    
+            &__viewmore {
+    
+                &__text {
+                    color: #7D7CAC;
+                    text-decoration: none;
+                }
+    
+                &--top {
+                    display: flex;
+                    justify-self: right;
+                }
+    
+                &--bottom {
+                    display: none;
+                }
+    
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+        align-items: center;
+        padding: 0px 24px;
+        
+        &__wrapper__title {
+            flex-direction: column;
+
+            &__viewmore {
+                &--top {
+                    display: none;
+                }
+        
+                &--bottom {
+                    display: flex;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+}
