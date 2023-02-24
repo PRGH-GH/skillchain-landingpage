@@ -15,12 +15,11 @@ function ReasonsSection() {
   const pathToLogo = {
     "skill-based-search": skillBasedLogo,
     "continous-upskilling": continousUpskillingLogo,
-    bootcamps: bootcampsLogo,
+    "bootcamps": bootcampsLogo,
     "wider-reach": widerReachLogo,
     "easy-application": easyApplicationLogo,
     "training-development": trainingDevelopmentLogo,
   };
-  console.log(staticReasons);
   const firstRow = staticReasons.slice(0, 3);
   const secondRow = staticReasons.slice(3,6);
 
@@ -32,7 +31,7 @@ function ReasonsSection() {
         <div className="ReasonsSection__heading">
           <h2>Why SkillChain</h2>
         </div>
-        <div className="ReasonSection__cardsWrapper">
+        <div className="ReasonsSection__cardsWrapper">
           <div className="ReasonsSection__cardsWrapper__firstRow">
             {firstRow.map((reason, i) => (
               <li key={reason.title + i}>
