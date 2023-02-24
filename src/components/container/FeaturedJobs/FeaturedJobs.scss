@@ -1,10 +1,10 @@
 .FeaturedJobs {
-    padding: 96px 64px;
-    background-color: var(--color-white-lilac);
+  padding: 96px 64px;
+  background-color: var(--color-white-lilac);
 
-    @media screen and (max-width: 480px) {
-        padding: 64px 24px;
-    }
+  @media screen and (max-width: 480px) {
+    padding: 64px 24px;
+  }
 
   &__contentWrapper {
     width: 100%;
@@ -49,10 +49,10 @@
     }
   }
 
-    &__cardContainer {
-        display: flex;
-        gap: 32px;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+  &__cardContainer {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

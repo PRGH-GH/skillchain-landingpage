@@ -1,8 +1,8 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "./PartnerBanner.scss";
 import Logo from "./assets/partnerLogos/prghDarkMain.svg";
+import "./PartnerBanner.scss";
 
 function PartnerBanner() {
   const banners = Array(10).fill({ name: "PRGH", src: Logo });
