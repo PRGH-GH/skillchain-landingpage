@@ -39,17 +39,17 @@
     }
   }
 
-  &__viewMoreLink {
+  &__viewMoreLink--top {
     color: var(--color-text);
     text-decoration: none;
 
     &__icon {
-      margin-left: 5px;
+      margin-left: 8px;
       vertical-align: middle;
     }
   }
 
-  &__viewMoreLink__bottom {
+  &__viewMoreLink--bottom {
     display: none;
   }
 
@@ -61,11 +61,11 @@
   }
 
   @media screen and (max-width: 840px) {
-    &__viewMoreLink {
+    &__viewMoreLink--top {
       display: none;
     }
 
-    &__viewMoreLink__bottom {
+    &__viewMoreLink--bottom {
       color: var(--color-text);
       text-decoration: none;
       display: inline-block;
