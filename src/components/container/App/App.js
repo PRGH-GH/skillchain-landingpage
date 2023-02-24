@@ -1,5 +1,5 @@
-import Navbar from "../../components/Navbar/Navbar";
 import HeroSection from "../../components/HeroSection/HeroSection";
+import Navbar from "../../components/Navbar/Navbar";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 import PartnerBanner from "../PartnerBanner/PartnerBanner";
 import "./App.scss";
