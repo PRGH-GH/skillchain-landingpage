@@ -4,7 +4,7 @@ import logo from './../../assets/skillchainLogoDark.svg';
 
 function Footer() {
     return (
-        <div className='Footer'>
+        <footer className='Footer'>
             <div className='Footer__container'>
                 <div className='Footer__container__logo'>
                     <img alt="Logo" src={logo}/>
@@ -16,7 +16,7 @@ function Footer() {
                     <p>© {(new Date()).getFullYear()} SkillChain</p>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }
 
