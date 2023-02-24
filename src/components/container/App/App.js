@@ -7,6 +7,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import ReinforcementSection from "../../components/ReinforcementStatement/ReinforcementStatement";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 import PartnerBanner from "../PartnerBanner/PartnerBanner";
+import ReasonsSection from "../ReasonsSection/ReasonsSection";
 import "./App.scss";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <PartnerBanner />
+      <ReasonsSection />
       <ReinforcementSection />
       <FeaturedJobs />
       <Footer />
