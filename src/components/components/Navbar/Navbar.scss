@@ -37,4 +37,8 @@
       border: 1px solid var(--color-blue-ribbon);
     }
   }
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 }
