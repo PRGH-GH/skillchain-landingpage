@@ -6,48 +6,48 @@
         padding: 64px 24px;
     }
 
-    &__contentWrapper {
-        width: 100%;
-        max-width: 1260px;
-        margin: auto;
+  &__contentWrapper {
+    width: 100%;
+    max-width: 1260px;
+    margin: auto;
 
-        display: flex;
-        flex-direction: column;
-        gap: 59px;
+    display: flex;
+    flex-direction: column;
+    gap: 59px;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__heading h2 {
+    color: var(--color-bunting);
+    position: relative;
+    margin: 0;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      display: block;
+      width: 24px;
+      height: 8px;
+      border-radius: 4px;
+      margin-top: 5px;
+      background: var(--color-blue-ribbon);
     }
+  }
 
-    &__heading {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
+  &__viewMoreLink {
+    color: var(--color-text);
+    text-decoration: none;
+
+    &__icon {
+      margin-left: 5px;
+      vertical-align: middle;
     }
-
-    &__heading h2 {
-        color: var(--color-bunting);
-        position: relative;
-        margin: 0;
-
-        &::after {
-            content: " ";
-            position: absolute;
-            display: block;
-            width: 24px;
-            height: 8px;
-            border-radius: 4px;
-            margin-top: 5px;
-            background: var(--color-blue-ribbon);
-        }
-    }
-
-    &__viewMoreLink {
-        color: var(--color-text);
-        text-decoration: none;
-
-        &__icon {
-            margin-left: 5px;
-            vertical-align: middle;
-        }
-    }
+  }
 
     &__cardContainer {
         display: flex;
