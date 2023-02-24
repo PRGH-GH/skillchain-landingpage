@@ -1,9 +1,9 @@
-.NavbarMobileLogoBar {
+.MobileNavbar {
   display: none;
 }
 
-@media screen and (max-width: 480px) {
-  .NavbarMobileLogoBar {
+@media screen and (max-width: 700px) {
+  .MobileNavbar {
     width: 90vw;
     height: 100px;
     margin: 0 auto;

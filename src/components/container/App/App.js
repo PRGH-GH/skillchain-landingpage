@@ -1,26 +1,29 @@
 import React, { useState } from "react";
+import Footer from "../../components/Footer/Footer";
 import HeroSection from "../../components/HeroSection/HeroSection";
+import MobileNavbar from "../../components/MobileNavbar/MobileNavbar";
+import MobileNavbarLinks from "../../components/MobileNavbarLinks/MobileNavbarLinks";
 import Navbar from "../../components/Navbar/Navbar";
+import ReinforcementSection from "../../components/ReinforcementStatement/ReinforcementStatement";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 import PartnerBanner from "../PartnerBanner/PartnerBanner";
-import Footer from "../../components/Footer/Footer";
-import ReinforcementSection from "../../components/ReinforcementStatement/ReinforcementStatement";
 import "./App.scss";
-import MobileNavigation from "../../components/MobileNavigation/MobileNavigation";
-import NavbarMobileLogoBar from "../../components/NavbarMobileLogoBar/NavbarMobileLogoBar";
 
 function App() {
-  const [isClicked, setIsClicked] = useState(false);
+  const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
 
   const handleClick = () => {
-    setIsClicked(!isClicked);
+    setIsMobileMenuOpened(!isMobileMenuOpened);
   };
 
   return (
     <div className="App">
       <>
-        <NavbarMobileLogoBar handleClick={handleClick} isClicked={isClicked} />
-        {isClicked && <MobileNavigation />}
+        <MobileNavbar
+          handleClick={handleClick}
+          isMobileMenuOpened={isMobileMenuOpened}
+        />
+        {isMobileMenuOpened && <MobileNavbarLinks />}
       </>
       <Navbar />
       <HeroSection />
