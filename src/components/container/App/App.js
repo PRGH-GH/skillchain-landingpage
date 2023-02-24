@@ -30,8 +30,8 @@ function App() {
       <HeroSection />
       <PartnerBanner />
       <ReasonsSection />
-      <ReinforcementSection />
       <FeaturedJobs />
+      <ReinforcementSection />
       <Footer />
     </div>
   );
