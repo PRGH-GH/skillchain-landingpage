@@ -49,10 +49,37 @@
     }
   }
 
+  &__viewMoreLink__bottom {
+    display: none;
+  }
+
   &__cardContainer {
     display: flex;
     gap: 32px;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
+  @media screen and (max-width: 840px) {
+    &__viewMoreLink {
+      display: none;
+    }
+
+    &__viewMoreLink__bottom {
+      color: var(--color-text);
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 auto;
+  
+      &__icon {
+        margin-left: 5px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+    }
+  
+  }
+
 }
+
+

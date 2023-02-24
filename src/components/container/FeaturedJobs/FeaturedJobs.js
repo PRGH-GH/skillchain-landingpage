@@ -31,6 +31,12 @@ function FeaturedJobs() {
             />
           ))}
         </div>
+        <a className="FeaturedJobs__viewMoreLink__bottom" href="/#">
+            <span className="FeaturedJobs__viewMoreLink__text">View More</span>
+            <span className="FeaturedJobs__viewMoreLink__icon">
+              <img src={viewMoreIcon} alt="view more link icon"/>
+            </span>
+        </a>
       </div>
     </section>
   );
