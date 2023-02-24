@@ -1,18 +1,19 @@
 import './Footer.scss';
 import logo from './../../assets/skillchainLogoDark.svg';
 
+
 function Footer() {
     return (
         <div className='Footer'>
             <div className='Footer__container'>
-                <div className='branding__logo'>
+                <div className='Footer__container__logo'>
                     <img alt="Logo" src={logo}/>
                 </div>
-                <div className='frame'>
-                    <a classname='privacy__policy' href='#'>Privacy Policy</a>
-                    <a className='terms' href='#'>Terms and Conditions</a>
+                <div className='Footer__container__frame'>
+                    <a href='/#'>Privacy Policy</a>
+                    <a href='/#'>Terms and Conditions</a>
                     <p className='space'>|</p>
-                    <p className='copyright'>© 2023 SkillChain</p>
+                    <p>© {(new Date()).getFullYear()} SkillChain</p>
                 </div>
             </div>
         </div>
