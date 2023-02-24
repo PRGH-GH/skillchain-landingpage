@@ -1,14 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../Navbar/assets/skillChainLogoLight.svg";
 import "./NavbarMobileLogoBar.scss";
 
-function NavbarMobileLogoBar() {
-  const [isClicked, setIsClicked] = useState(false);
-
-  const handleClick = () => {
-    setIsClicked(!isClicked);
-  };
-
+function NavbarMobileLogoBar({ handleClick, isClicked }) {
   return (
     <div className="NavbarMobileLogoBar">
       <div className="NavbarMobileLogoBar__logo">

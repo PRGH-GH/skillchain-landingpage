@@ -1,7 +1,6 @@
 .HeroSection {
   max-width: 1260px;
   width: 87%;
-  max-height: 673px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -86,11 +85,12 @@
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 480px) {
   .HeroSection {
     flex-direction: column;
     width: 100%;
     margin-top: 25px;
+    gap: 1em;
 
     &__info {
       margin: 25px 25px 0 25px;
