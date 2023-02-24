@@ -6,6 +6,7 @@ import ReasonsSection from "../ReasonsSection/ReasonsSection";
 import Footer from "../../components/Footer/Footer";
 import ReinforcementSection from "../../components/ReinforcementStatement/ReinforcementStatement";
 import "./App.scss";
+import CandidateSection from "../../components/CandidateSection/CandidateSection";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <PartnerBanner />
       <ReasonsSection />
       <ReinforcementSection />
+      <CandidateSection />
       <FeaturedJobs />
       <Footer />
     </div>
