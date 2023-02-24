@@ -1,14 +1,19 @@
 .Reinforcement {
   display: flex;
   align-items: center;
-  margin: 96px;
-  gap: 96px;
+  justify-content: space-around;
+  margin: 0 auto;
+  // gap: 96px;
+  
 
   &__image {
     border-radius: 8px;
+    max-width: 100%;
+    margin: 4vw;
   }
 
-  &Reinforcement__statement {
+  &__statement {
+    margin: 0 4vw;
 
     &__header {
       color: var(--color-bunting);
@@ -23,22 +28,37 @@
       width: 25px;
       height: 10px;
       border-radius: 32px;
-      background-color: var(--color-blue-ribbon);;
-     }
-     
+      background-color: var(--color-blue-ribbon);
+    }
+
     &__text {
-    color: var(--color-text);
+      color: var(--color-text);
       line-height: 150%;
-     }
+    }
   }
 }
 
-@media screen and (max-width: 480px) {
-  .Reinforcement{
-    height: auto;
+@media screen and (max-width: 768px) {
+  .Reinforcement {
+    max-width: 100%;
+    align-items: center;
     flex-direction: column;
-    margin: 5vw;
     gap: 0;
+
+    &__statement {
+      // margin:0 5vw;
+
+      &__header {
+        max-width: 50%;
+        text-align: start;
+        margin-top: 1em;
+      }
+
+      &__image {
+        align-self: center;
+        height: auto;
+        flex-basis: auto;
+      }
+    }
   }
 }
-    
