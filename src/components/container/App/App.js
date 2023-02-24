@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CandidateSection from "../../components/CandidateSection/CandidateSection";
 import Footer from "../../components/Footer/Footer";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import MobileNavbar from "../../components/MobileNavbar/MobileNavbar";
@@ -32,6 +33,7 @@ function App() {
       <ReasonsSection />
       <FeaturedJobs />
       <ReinforcementSection />
+      <CandidateSection />
       <Footer />
     </div>
   );

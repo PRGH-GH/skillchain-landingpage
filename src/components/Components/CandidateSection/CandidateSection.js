@@ -1,32 +1,45 @@
-import React from 'react'
-import "./CandidateSection.scss"
-import ViewMoreIcon from "./../../assets/viewMoreIcon.svg"
+import React from "react";
+import { staticCandidates } from "../../../state/models/staticCandidates";
+import "./CandidateSection.scss";
+import CandidateProfileCard from "./../CandidateProfileCard/CandidateProfileCard";
+import viewMoreIcon from "./../../assets/viewMoreIcon.svg";
+import candidateImage from "./assets/candidateImage.svg";
 
 function CandidateSection() {
   return (
-    <div className='CandidateSection'>
-        <div className='CandidateSection__wrapper'>
-          <div className='CandidateSection__wrapper__title'>
-            <h2 className='CandidateSection__wrapper__title__text'>
-                  Meet Candidates
-                  <div className='CandidateSection__wrapper__title__text__rec'></div>
-              </h2>
-              <div className='CandidateSection__wrapper__title__viewmore CandidateSection__wrapper__title__viewmore--top'>
-                <a href='#' className='CandidateSection__wrapper__title__viewmore__text'>
-                    View More {" "} 
-                    <img className='CandidateSection__wrapper__viewmore__icon' src={ViewMoreIcon} />
-                </a>
-              </div>
-              {/** Insert cards here */}
-              <div className='CandidateSection__wrapper__title__viewmore CandidateSection__wrapper__title__viewmore--bottom'>
-                <a href='#' className='CandidateSection__wrapper__title__viewmore__text'>
-                    View More {" "} 
-                    <img className='CandidateSection__wrapper__viewmore__icon' src={ViewMoreIcon} />
-                </a>
-              </div>
-          </div>
+    <div className="CandidateSection">
+      <div className="CandidateSection__wrapper">
+        <div className="CandidateSection__heading">
+          <h2 className="CandidateSection__heading__text">
+            Meet Candidates
+          </h2>
+          <a className="CandidateSection__viewMoreLink--top" href="/#">
+            <span className="CandidateSection__viewMoreLink__text">
+              View More
+            </span>
+            <span className="CandidateSection__viewMoreLink__icon">
+              <img src={viewMoreIcon} alt="view more link icon" />
+            </span>
+          </a>
         </div>
+        <div className="CandidateSection__cardContainer">
+          {staticCandidates.map((candidate) => (
+            <CandidateProfileCard
+              candidate={{ ...candidate, image: candidateImage }}
+              key={candidate.name}
+            />
+          ))}
+        </div>
+        <a className="CandidateSection__viewMoreLink--bottom" href="/#">
+          <span className="CandidateSection__viewMoreLink__text">
+            View More
+          </span>
+          <span className="CandidateSection__viewMoreLink__icon">
+            <img src={viewMoreIcon} alt="view more link icon" />
+          </span>
+        </a>
+      </div>
     </div>
-  )
+  );
 }
-export default CandidateSection
+export default CandidateSection;

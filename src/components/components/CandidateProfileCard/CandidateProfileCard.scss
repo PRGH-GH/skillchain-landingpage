@@ -5,9 +5,13 @@
   padding: 27px 24px;
   gap: 0.7em;
   border-radius: 1em;
-  width: 25em;
-  height: 19em;
+  width: 22em;
+  height: 20.5em;
   background-color: var(--color-white);
+
+  @media screen and (max-width: 1260px) {
+    margin: auto;
+  }
 
   &__header {
     display: flex;
