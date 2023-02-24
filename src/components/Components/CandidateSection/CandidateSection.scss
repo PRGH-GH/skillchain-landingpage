@@ -1,71 +1,80 @@
 .CandidateSection {
-    padding: 96px 64px;
-    background: var(--color-white-lilac);
+  padding: 96px 64px;
+  background: var(--color-white-lilac);
 
-    &__wrapper {
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
+  &__wrapper {
+    width: 100%;
+    max-width: 1260px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 59px;
+  }
 
-        &__title {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+  &__heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 
-            &__text {
-                color: var(--color-bunting);
-                margin: 0;
-    
-                &__rec {
-                    width: 24px;
-                    height: 8px;
-                    background: var(--color-blue-ribbon);
-                    border-radius: 4px;
-                    flex: none;
-                    order: 0;
-                    flex-grow: 0;
-                }
-            }
-    
-            &__viewmore {
-    
-                &__text {
-                    color: #7D7CAC;
-                    text-decoration: none;
-                }
-    
-                &--top {
-                    display: flex;
-                    justify-self: right;
-                }
-    
-                &--bottom {
-                    display: none;
-                }
-    
-            }
-        }
+    &__text {
+      color: var(--color-bunting);
+      position: relative;
+      margin: 0;
 
+      &::after {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 24px;
+        height: 8px;
+        border-radius: 4px;
+        margin-top: 5px;
+        background: var(--color-blue-ribbon);
+      }
+    }
+  }
+
+  &__viewMoreLink--top {
+    color: var(--color-text);
+    text-decoration: none;
+
+    &__icon {
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+  }
+
+  &__viewMoreLink--bottom {
+    display: none;
+  }
+
+  &__cardContainer {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 64px 24px;
+  }
+
+  @media screen and (max-width: 840px) {
+    &__viewMoreLink--top {
+      display: none;
     }
 
-    @media screen and (max-width: 480px) {
-        align-items: center;
-        padding: 0px 24px;
-        
-        &__wrapper__title {
-            flex-direction: column;
+    &__viewMoreLink--bottom {
+      color: var(--color-text);
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 auto;
 
-            &__viewmore {
-                &--top {
-                    display: none;
-                }
-        
-                &--bottom {
-                    display: flex;
-                    align-items: flex-end;
-                }
-            }
-        }
+      &__icon {
+        margin-left: 5px;
+        vertical-align: middle;
+        display: inline-block;
+      }
     }
+  }
 }

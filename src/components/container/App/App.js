@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CandidateSection from "../../components/CandidateSection/CandidateSection";
 import Footer from "../../components/Footer/Footer";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import MobileNavbar from "../../components/MobileNavbar/MobileNavbar";
@@ -9,7 +10,6 @@ import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 import PartnerBanner from "../PartnerBanner/PartnerBanner";
 import ReasonsSection from "../ReasonsSection/ReasonsSection";
 import "./App.scss";
-import CandidateSection from "../../components/CandidateSection/CandidateSection";
 
 function App() {
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
@@ -34,7 +34,6 @@ function App() {
       <FeaturedJobs />
       <ReinforcementSection />
       <CandidateSection />
-      <FeaturedJobs />
       <Footer />
     </div>
   );
