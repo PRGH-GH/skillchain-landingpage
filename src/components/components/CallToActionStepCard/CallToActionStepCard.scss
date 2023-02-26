@@ -1,0 +1,79 @@
+.container {
+    margin: 0 auto ;
+    color: #151F4C;
+    display: flex;
+    flex-direction: row;
+    max-width: 1800px;
+    justify-content: space-between;
+
+@media screen and (max-width: 1260px) {
+    margin: auto;
+    flex-direction: column;
+    
+    }
+}
+.card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 27px 24px 27px 24px;
+    flex-direction: column;
+}
+.num {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background-color: #FFBA00;
+    font-weight: 700;
+    font-size: 20px;
+     
+}
+.title {
+    width: auto;
+    height: 27px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 133%;
+    color: #151F4C;
+    align-self: stretch;
+    margin: 20px auto;
+    display: flex;
+
+}
+
+.text {  
+    align-self: stretch;
+    display: flex;
+    margin: auto;
+    max-width: 320px;
+    line-height: 150%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+.arrow{
+    content: url("./assets/arrow.svg");
+    width: 32px;
+    align-self:center;
+    opacity: 0.4;
+    display: block;
+    color: rgba(125, 124, 172, 1);
+    padding-bottom: 55px;
+    
+    @media screen and (max-width: 1260px) {
+        display: none;
+        }
+    }
+
+  
+
+
+    
